@@ -10,6 +10,14 @@ const globalStyles = css`
     padding: 0;
     display: flex;
     justify-content: center;
+    font-family: "Inter";
+    background-color: black;
+  }
+  image {
+    display: block;
+  }
+  button {
+    border: none;
   }
 `;
 
