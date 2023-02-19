@@ -6,8 +6,9 @@ import Footer from "./assets/Footer";
 import MainSection from "./MainContainer";
 
 const AppContainer = styled.div`
-  background-color: whitesmoke; //TODO: Remove later
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default function App() {
