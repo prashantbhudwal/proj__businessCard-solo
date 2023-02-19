@@ -9,8 +9,8 @@ const MainContainer = styled.div`
 export default function MainSection() {
   return (
     <MainContainer>
-      <HeroContent/>
-      <DetailedContent/>
+      <HeroContent />
+      <DetailedContent />
     </MainContainer>
   );
 }
