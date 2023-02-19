@@ -1,5 +1,9 @@
-const heroImage = <img src="src/assets/profile.jpg"></img>;
+import HeroImage from "./HeroImage";
 
 export default function App() {
-  return <>{heroImage}</>;
+  return (
+    <>
+      <HeroImage />
+    </>
+  );
 }
