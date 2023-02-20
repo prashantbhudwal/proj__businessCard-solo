@@ -2,7 +2,7 @@ import HeroImage from "./HeroImage";
 import styled from "@emotion/styled";
 import { Global } from "@emotion/react";
 import globalStyles from "./globalStyle";
-import Footer from "./assets/Footer";
+import Footer from "./Footer";
 import MainSection from "./MainSection";
 
 const AppContainer = styled.div`
