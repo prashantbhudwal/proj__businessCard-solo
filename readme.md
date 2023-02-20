@@ -11,7 +11,10 @@ https://www.figma.com/file/4ctPLUvIn5b5Ep6YPOZWWd/Digital-Business-Card?node-id=
 - No special requirements, just build what is in the design.
 
 # Side Explorations
+
 - While doing this project, I explored
   - Css-in-Js: Emotion/Styled Components
   - Fontawesome in React
   - Storybook
+
+END
