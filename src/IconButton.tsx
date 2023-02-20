@@ -10,23 +10,29 @@ interface ButtonProps {
 }
 
 const StyledIconButton = styled.button<ButtonProps>`
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
   color: ${(props: any) => props.color};
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   min-width: 100px;
   padding: 0.7em 1.5em;
-  font-size: 1em;
   background-color: ${(props: any) => props.backgroundColor};
-  display: flex;
-  gap: 0.3em;
-  align-items: baseline;
+
+  & .label {
+    font-size: 1rem;
+  }
+  & .icon {
+    font-size: 0.9rem;
+  }
 `;
 
 const IconButton = ({ backgroundColor, color, icon, children }: any) => {
   return (
     <StyledIconButton backgroundColor={backgroundColor} color={color}>
-      <div>{icon}</div>
-      <div>{children}</div>
+      <div className="icon">{icon}</div>
+      <div className="label">{children}</div>
     </StyledIconButton>
   );
 };
