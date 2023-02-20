@@ -37,8 +37,9 @@ const StyledHeroContent = styled.div`
 `;
 
 export default function HeroContent({ profile }: any) {
-  const { name, profession, url } = profile;
-  const { website, linkedin, email } = url;
+  const { name, profession, portfolio, url } = profile;
+  const { linkedin, email } = url;
+  const { portfolioName, portfolioUrl } = portfolio;
   const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} />;
   const emailIcon = <FontAwesomeIcon icon={faEnvelope} />;
   const primary = `#5093E2`;
@@ -49,7 +50,7 @@ export default function HeroContent({ profile }: any) {
     <StyledHeroContent>
       <h1>{name}</h1>
       <h2>{profession}</h2>
-      <a href={website}>{website}</a>
+      <a href={portfolioUrl}>{portfolioName}</a>
       <div className="buttonContainer">
         <IconButton
           href={email}
