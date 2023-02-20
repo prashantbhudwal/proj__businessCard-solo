@@ -19,6 +19,10 @@ const globalStyles = css`
   button {
     border: none;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default globalStyles;
