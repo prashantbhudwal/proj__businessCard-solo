@@ -8,38 +8,38 @@ const StyledHeroContent = styled.div`
   align-items: center;
   gap: 0.5em;
   padding: 2em;
-`;
 
-const FullName = styled.h1`
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: white;
-`;
+  & h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+  }
 
-const Profession = styled.h2`
-  font-size: 1rem;
-  color: #f3bf99;
-`;
+  & h2 {
+    font-size: 1rem;
+    color: #f3bf99;
+  }
 
-const Website = styled.p`
-  color: #f5f5f5;
-  font-size: 0.8rem;
-`;
+  & p {
+    color: #f5f5f5;
+    font-size: 0.8rem;
+  }
 
-const ButtonContainer = styled.div`
-  display: flex;
+  .buttonCOntainer {
+    display: flex;
+  }
 `;
 
 export default function HeroContent() {
   return (
     <StyledHeroContent>
-      <FullName>Prashant Bhudwal</FullName>
-      <Profession>Frontend Developer</Profession>
-      <Website>ideabox.substack.com</Website>
-      <ButtonContainer>
-        <Button gray>Linkedin</Button>
-        <Button primary>Linkedin</Button>
-      </ButtonContainer>
+      <h1>Prashant Bhudwal</h1>
+      <h2>Frontend Developer</h2>
+      <p>ideabox.substack.com</p>
+      <div className="buttonContainer">
+        <Button outlined>Email</Button>
+        <Button primary>LinkedIn</Button>
+      </div>
     </StyledHeroContent>
   );
 }
