@@ -9,11 +9,11 @@ const StyledMainSection = styled.div`
   gap: 1em;
 `;
 
-export default function MainSection() {
+export default function MainSection({ profile }: any) {
   return (
     <StyledMainSection>
-      <HeroContent />
-      <MainContent />
+      <HeroContent profile={profile} />
+      <MainContent profile={profile} />
     </StyledMainSection>
   );
 }

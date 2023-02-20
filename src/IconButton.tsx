@@ -28,12 +28,14 @@ const StyledIconButton = styled.button<ButtonProps>`
   }
 `;
 
-const IconButton = ({ backgroundColor, color, icon, children }: any) => {
+const IconButton = ({ backgroundColor, color, icon, href, children }: any) => {
   return (
-    <StyledIconButton backgroundColor={backgroundColor} color={color}>
-      <div className="icon">{icon}</div>
-      <div className="label">{children}</div>
-    </StyledIconButton>
+    <a href={href}>
+      <StyledIconButton backgroundColor={backgroundColor} color={color}>
+        <div className="icon">{icon}</div>
+        <div className="label">{children}</div>
+      </StyledIconButton>
+    </a>
   );
 };
 

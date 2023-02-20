@@ -4,6 +4,7 @@ import { Global } from "@emotion/react";
 import globalStyles from "./globalStyle";
 import Footer from "./Footer";
 import MainSection from "./MainSection";
+import profile from "./profileData";
 
 const AppContainer = styled.div`
   max-width: 400px;
@@ -16,9 +17,9 @@ export default function App() {
   return (
     <AppContainer>
       <Global styles={globalStyles} />
-      <HeroImage />
-      <MainSection />
-      <Footer />
+      <HeroImage src={profile.url.profileImage}/>
+      <MainSection profile={profile} />
+      <Footer links = {profile.url}/>
     </AppContainer>
   );
 }

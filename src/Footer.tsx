@@ -17,12 +17,19 @@ const StyledFooter = styled.div`
   padding: 0.5em 1em;
 `;
 
-export default function Footer() {
+export default function Footer({ links }: any) {
+  const { github, twitter, substack } = links;
   return (
     <StyledFooter>
-      <FontAwesomeIcon icon={faGithub} />
-      <FontAwesomeIcon icon={faTwitter} />
-      <FontAwesomeIcon icon={faHashnode} />
+      <a href={github}>
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
+      <a href={twitter}>
+        <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a href={substack}>
+        <FontAwesomeIcon icon={faHashnode} />
+      </a>
     </StyledFooter>
   );
 }

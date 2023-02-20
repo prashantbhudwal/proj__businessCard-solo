@@ -6,10 +6,10 @@ const Image = styled.img`
   border-radius: 10px 10px 0px 0px;
 `;
 
-export default function HeroImage() {
+export default function HeroImage({ src }: any) {
   return (
     <>
-      <Image src="/src/assets/profile.jpg"></Image>
+      <Image src={src}></Image>
     </>
   );
 }

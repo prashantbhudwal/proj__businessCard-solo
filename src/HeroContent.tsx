@@ -23,7 +23,8 @@ const StyledHeroContent = styled.div`
     color: #f3bf99;
   }
 
-  & p {
+  & a {
+    text-decoration: none;
     color: #f5f5f5;
     font-size: 0.8rem;
   }
@@ -35,7 +36,9 @@ const StyledHeroContent = styled.div`
   }
 `;
 
-export default function HeroContent() {
+export default function HeroContent({ profile }: any) {
+  const { name, profession, url } = profile;
+  const { website, linkedin, email } = url;
   const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} />;
   const emailIcon = <FontAwesomeIcon icon={faEnvelope} />;
   const primary = `#5093E2`;
@@ -44,14 +47,24 @@ export default function HeroContent() {
   const black = `#000`;
   return (
     <StyledHeroContent>
-      <h1>Prashant Bhudwal</h1>
-      <h2>Frontend Developer</h2>
-      <p>ideabox.substack.com</p>
+      <h1>{name}</h1>
+      <h2>{profession}</h2>
+      <a href={website}>{website}</a>
       <div className="buttonContainer">
-        <IconButton color={black} backgroundColor={gray} icon={emailIcon}>
+        <IconButton
+          href={email}
+          color={black}
+          backgroundColor={gray}
+          icon={emailIcon}
+        >
           Email
         </IconButton>
-        <IconButton color={white} backgroundColor={primary} icon={linkedinIcon}>
+        <IconButton
+          href={linkedin}
+          color={white}
+          backgroundColor={primary}
+          icon={linkedinIcon}
+        >
           LinkedIn
         </IconButton>
       </div>
