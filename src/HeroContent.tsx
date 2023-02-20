@@ -10,7 +10,7 @@ const StyledHeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
-  padding: 2em;
+  padding: 1.5em;
 
   & h1 {
     font-weight: 700;
@@ -29,6 +29,7 @@ const StyledHeroContent = styled.div`
   }
 
   .buttonContainer {
+    margin-top: 0.75em;
     display: flex;
     gap: 1em;
   }
