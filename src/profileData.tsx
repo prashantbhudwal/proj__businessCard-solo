@@ -11,7 +11,8 @@ const profileData = {
   },
 
   url: {
-    profileImage: "src/assets/profile.jpg",
+    profileImage:
+      "https://raw.githubusercontent.com/prashantbhudwal/proj__businessCard-solo/master/src/assets/profile.jpg",
     website: "https://ideabox.substack.com/",
     linkedin: "https://www.linkedin.com/in/prashantbhudwal/",
     email: "https://mailto:prashant.bhudwal@gmail.com",
