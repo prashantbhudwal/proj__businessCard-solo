@@ -3,12 +3,13 @@ import styled from "@emotion/styled";
 import { Global } from "@emotion/react";
 import globalStyles from "./globalStyle";
 import Footer from "./assets/Footer";
-import MainSection from "./MainContainer";
+import MainSection from "./MainSection";
 
 const AppContainer = styled.div`
-  max-width: 320px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+  color: white;
 `;
 
 export default function App() {
